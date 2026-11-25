@@ -22,7 +22,7 @@ Scheduled-LRQTC/
 
 ## Environment
 
-The implementation requires **64-bit Python 3.10 on Windows** and a CUDA-capable NVIDIA GPU. Create and activate a Python environment, install a CUDA-compatible PyTorch build following the [official PyTorch instructions](https://pytorch.org/get-started/locally/), and install the remaining dependencies:
+The implementation requires a CUDA-capable NVIDIA GPU. Create and activate a Python environment, install a CUDA-compatible PyTorch build following the [official PyTorch instructions](https://pytorch.org/get-started/locally/), and install the remaining dependencies:
 
 ```powershell
 conda create -n scheduled-lrqtc python=3.10
