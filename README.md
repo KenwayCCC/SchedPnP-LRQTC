@@ -2,6 +2,12 @@
 
 Official implementation of **Scheduled-LRQTC** for color video completion. The method combines low-rank quaternion tensor modeling with complementary spatial and spatiotemporal denoising priors. A dynamic probability schedule coordinates the two priors during reconstruction.
 
+## Foreman video completion
+
+![Observed input, Scheduled-LRQTC reconstruction, and ground truth on Foreman](assets/foreman_mr90_demo.gif)
+
+**Foreman · MR = 0.90 · 20 frames.** All three views show the same frame and crop. The overlay shows the reported PSNR (30.298 dB). The reconstruction shown in the GIF reaches 30.246 dB in the demo run.
+
 ## Repository layout
 
 ```text
