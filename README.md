@@ -8,6 +8,16 @@ Official implementation of **Scheduled-LRQTC** for color video completion. The m
 
 **Foreman · MR = 0.90 · 20 frames.** All three views show the same fram. The overlay shows the reported PSNR (30.298 dB).
 
+## Cosine denoiser scheduling
+
+![Conceptual overview of spatial and temporal denoising across early, middle, and late iterations](assets/cosine_scheduling_overview.png)
+
+The cosine schedule gradually shifts the selection probability from framewise FFDNet toward multiframe FastDVDnet. Each iteration samples one denoiser for the entire video.
+
+![Cosine selection probabilities and the denoiser sampled at each iteration on Foreman](assets/foreman_mr90_schedule_demo.gif)
+
+The animation shows a 200-iteration cosine run on Foreman at MR = 0.90. The curves give the selection probabilities, and the strip records the denoiser selected at each iteration.
+
 ## Repository layout
 
 ```text
